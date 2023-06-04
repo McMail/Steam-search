@@ -1,7 +1,8 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,19 +12,26 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="index.js"></script> 
+  <script src="steam.js"></script>
+  <script src="index.js"></script>
+  <script>
+    function searchSteam() {
+      const searchTerm = document.getElementById('searchInput').value;
+      window.location.href = `https://store.steampowered.com/search/?term=${encodeURIComponent(searchTerm)}&category1=998`;
+    }
+  </script>
 </head>
 <body>
   <div id="loading">
     <div id="spinner"></div>
   </div>
   <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-    <div id="title">Steam Profile search</div><br>
+    <div id="title">Steam Inventory search</div><br>
     <div id="links">
-      <a href="index.html">Search for a game on steams</a>
+      <a href="index_playersearch.html">Search for a players profile</a>
       <a href="gamesinotherregions.html" style="margin:0px 0px;">Games in other regions</a>
-      <a href="#contact" style="margin:0px 0px;">Game search</a>
-      <a href="#skills">Your account</a>
+      <a href="index.html" style="margin:0px 0px;">Game search</a>
+      <a href="accountsteam.html">Your account</a>
     </div>
   </div>
   <center>
