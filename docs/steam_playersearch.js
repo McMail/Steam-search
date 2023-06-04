@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   const tableBody = document.getElementById("table-body");
   const searchInputplayer = document.getElementById("search-input-player");
   const searchBtnplayer = document.getElementById("search-btn-player");
